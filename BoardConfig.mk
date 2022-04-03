@@ -40,3 +40,6 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
 
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
+# Vendor MiuiCamera
+-include device/xiaomi/vermeer-miuicamera/BoardConfig.mk
