@@ -14,6 +14,15 @@ $(call inherit-product, device/xiaomi/vermeer/device.mk)
 # Inherit from common lineage configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Rising Flags
+RISING_MAINTAINER := Lunark :3 x Erin_Max
+TARGET_ENABLE_BLUR := true
+WITH_GMS := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+TARGET_HAS_UDFPS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
+
 PRODUCT_DEVICE := vermeer
 PRODUCT_NAME := lineage_vermeer
 PRODUCT_BRAND := POCO
@@ -23,4 +32,6 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildFingerprint=POCO/vermeer_global/vermeer:15/AQ3A.240912.001/OS2.0.207.0.VNKMIXM:user/release-keys
+    BuildFingerprint=POCO/vermeer_global/vermeer:15/AQ3A.240912.001/OS2.0.207.0.VNKMIXM:user/release-keys \
+    RisingChipset="Snapdragon® 8 Gen 2" \
+    RisingMaintainer="Lunark :3 x Erin_Max"
