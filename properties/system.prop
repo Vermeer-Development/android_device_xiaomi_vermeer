@@ -1,2 +1,8 @@
+# Props Project Infinity
+ro.infinity.soc=Snapdragon 8 Gen 2
+ro.infinity.battery=5000 mAh
+ro.infinity.display=1440 x 3200, 120 Hz
+ro.infinity.camera=16MP, 50MP + 8MP + 2MP
+
 # Xiaomi
 ro.product.mod_device=vermeer_global
