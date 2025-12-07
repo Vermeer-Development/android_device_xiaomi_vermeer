@@ -11,11 +11,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from vermeer device
 $(call inherit-product, device/xiaomi/vermeer/device.mk)
 
-# Inherit from common lineage configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit from common infinity configuration
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+
+# InfinityX flags
+INFINITY_BUILD_TYPE := OFFICIAL
+INFINITY_MAINTAINER := Lunark
+TARGET_SUPPORTS_BLUR := true
+WITH_GAPPS := true
+TARGET_HAS_UDFPS := true
+PRODUCT_NO_CAMERA := true
 
 PRODUCT_DEVICE := vermeer
-PRODUCT_NAME := lineage_vermeer
+PRODUCT_NAME := infinity_vermeer
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := 23113RKC6G
 PRODUCT_MANUFACTURER := Xiaomi
